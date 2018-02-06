@@ -41,11 +41,11 @@ void Part1() {
 }
 
 void Part2() {
-	cout << "\n      /|\                      ----------------------" << endl;
-	cout << "     / | \ b                   |                     |    width" << endl;
-	cout << " a  /  |  \                    |                     |" << endl;
-	cout << "   / h |   \                   |                     |" << endl;
-	cout << "  /    |    \                  |                     |    " << endl;
+	cout << "\n      /|\\                      ----------------------" << endl;
+	cout << "     / | \\ b                   |                     |    width" << endl;
+	cout << " a  /  |  \\                    |                     |" << endl;
+	cout << "   / h |   \\                   |                     |" << endl;
+	cout << "  /    |    \\                  |                     |    " << endl;
 	cout << "  -----------                  ----------------------" << endl;
 	cout << "        c							    length" << endl;
 
