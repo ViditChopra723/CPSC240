@@ -41,6 +41,11 @@ void Part1() {
 }
 
 void Part2() {
+	int a, b, c, h, length, width, areaTri, perTri, areaRec, perRec;
+	int two = 2;
+
+	
+	
 	cout << "\n      /|\\                      ----------------------" << endl;
 	cout << "     / | \\ b                   |                     |    width" << endl;
 	cout << " a  /  |  \\                    |                     |" << endl;
@@ -49,9 +54,41 @@ void Part2() {
 	cout << "  -----------                  ----------------------" << endl;
 	cout << "        c							    length" << endl;
 
+	cout << " \n enter values for a,b,c, and h : ";
+	cin >> a;
+	cin >> b;
+	cin >> c;
+	cin >> h;
 
+	cout << " \n enter values for length and width of rectangle : ";
+	cin >> length;
+	cin >> width;
 
+	//compute
+	//area of triangle ((c*h)/2)
+	_asm {
+		mov eax, c;
+		imul h;
+		idiv two;
+		mov areaTri, eax;
+
+	}
+
+	//perimeter of triangle(a+b+c)
+	_asm {
+		mov eax, a;
+		add eax, b;
+		add eax, c;
+		mov perTri, eax;
+
+	}
 	
+	//area of rectangle (length * width)
+	_asm {
+
+
+
+	}
 
 
 
